@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Quicksand&family=Roboto+Slab:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Students</title>
+</head>
+<body>
+    <h2>Hello lux developer!</h2>
+    <p>This web-service is created as an API endpoint that consumes data from a JSON file, and then hosting it with docker. 
+        <a href="https://github.com/HarunMbaabu/Flask-and-Docker-Application-Domo"> Read more.</a></p>
+    {% for student in students %}
+        <div id="box">
+            <ul class="card">
+                <li class="card-item header">{{ student['name'] }}</li>
+                <li class="card-item text"><span>Country: </span>{{ student['Country'] }}</li>
+                <li class="card-item id"><span>ID: </span>{{ student['studentsId'] }}</li>
+                <a href="{{ student['GitHub'] }}" class="btn">GITHUB.</a>
+            </ul>
+        </div> 
+    {% endfor %}
+
+    <footer>
+        Made with ❤️ by billy. &copy2021
+    </footer>
+</body>
+</html>

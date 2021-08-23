@@ -1,0 +1,103 @@
+body {
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h2, p {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.card {
+    width: 42%;
+    border: 1px solid #080808;
+    border-radius: 6px;
+    list-style-type: none;
+    padding: 20px;
+    float: left;
+    margin: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: 2px 3px #6b6a6abb;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: rgba(181, 184, 183, 0.5);
+    transition: ease .6s;
+}
+
+.card-item {
+    padding: 4px;
+}
+
+span {
+    font-weight: 600;
+    color: #77a0b3;
+}
+
+.header{
+    font-size: large;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #627597;
+}
+
+.btn {
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    left: 80%;
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.btn:hover {
+    background-color: #0099cc;
+    transition: ease-out 1s;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 60%;
+    height: 40px;
+    background: grey;
+    font-family: monospace;
+    text-align: center;
+}
+
+
+
+/* Responsive section */
+@media screen and (max-width: 800px){
+    body{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .card {
+        width: 100%;
+        margin: 2px;
+        padding: 10px;
+    }
+    .card-item {
+        padding: 2px;
+    }
+    .btn {
+        padding: 6px;
+        margin: 2px;
+        width: 8vw;
+    }
+    footer {
+        position: fixed;
+        padding: 10px 10px 0px 10px;
+        bottom: 0;
+        width: 80%;
+        height: 20px;
+        background: grey;
+    }
+}
